@@ -12,25 +12,32 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     var audioPlayer : AVAudioPlayer!
+    var flag : Bool = false
     let soundArray = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
+    
+    func fading(){audioPlayer.setVolume(0.0, fadeDuration: 2)}
     
     @IBAction func buttonStopPressed(_ sender: UIButton) {
         
-        audioPlayer.setVolume(0, fadeDuration: 2)
- 
-        audioPlayer.currentTime = 0
+        fading()
 
     }
     
+    @IBOutlet weak var buttonColor: UIButton!
+    
     @IBAction func buttonPressed(_ sender: UIButton) {
         
-        print(sender.tag)
+        
+        if (flag == true){
+            fading()
+        }
+        
+        sender.backgroundColor = UIColor.darkGray
         playPad(SoundFileName: soundArray[sender.tag])
         
     }
@@ -45,10 +52,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         catch{
             print(error)
         }
-        audioPlayer.setVolume(1, fadeDuration: 1)
+        
+        audioPlayer.prepareToPlay()
+        audioPlayer.delegate = self
+        audioPlayer.numberOfLoops = 10
+        flag = true
         audioPlayer.play()
+        
     }
-    
-
 }
-

@@ -218,13 +218,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonColor" destination="MCB-I6-ErU" id="M8W-S7-ixs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="133.59999999999999" y="133.00492610837438"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="3024" height="4032"/>
+        <image name="Background" width="1008" height="1344"/>
     </resources>
 </document>
