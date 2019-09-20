@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -219,7 +219,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonColor" destination="MCB-I6-ErU" id="M8W-S7-ixs"/>
+                        <outlet property="A" destination="v6G-Dq-ybV" id="4Kl-in-pYa"/>
+                        <outlet property="B" destination="MCB-I6-ErU" id="N7W-iB-mML"/>
+                        <outlet property="C" destination="PAN-Ur-195" id="rSF-RC-1dp"/>
+                        <outlet property="D" destination="bT3-GC-Xsr" id="nhP-gY-faj"/>
+                        <outlet property="E" destination="bx3-WG-Wm7" id="bV5-RM-h7i"/>
+                        <outlet property="F" destination="6XL-h3-8EL" id="KF6-8n-Mkc"/>
+                        <outlet property="G" destination="Q13-T8-ZmB" id="Daz-Nd-GT5"/>
+                        <outlet property="aSharp" destination="2Sn-Ez-ynb" id="68a-jM-kFX"/>
+                        <outlet property="buttonColor" destination="PAN-Ur-195" id="I0D-Sn-JpL"/>
+                        <outlet property="cSharp" destination="rWx-G0-kVu" id="x7E-8h-3i1"/>
+                        <outlet property="dSharp" destination="WNO-Fe-pg6" id="UBm-ZC-3Yx"/>
+                        <outlet property="fSharp" destination="mqP-vA-O3T" id="Acf-hh-Yfe"/>
+                        <outlet property="gSharp" destination="48r-Hy-bwv" id="wOW-cH-RTd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

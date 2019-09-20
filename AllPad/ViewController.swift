@@ -14,6 +14,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var audioPlayer : AVAudioPlayer!
     var flag : Bool = false
     let soundArray = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
+    var lastSender : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +25,53 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func buttonStopPressed(_ sender: UIButton) {
         
+        C.backgroundColor = UIColor.black
+        cSharp.backgroundColor = UIColor.black
+        D.backgroundColor = UIColor.black
+        dSharp.backgroundColor = UIColor.black
+        E.backgroundColor = UIColor.black
+        F.backgroundColor = UIColor.black
+        fSharp.backgroundColor = UIColor.black
+        G.backgroundColor = UIColor.black
+        gSharp.backgroundColor = UIColor.black
+        A.backgroundColor = UIColor.black
+        aSharp.backgroundColor = UIColor.black
+        B.backgroundColor = UIColor.black
         fading()
 
     }
     
     @IBOutlet weak var buttonColor: UIButton!
+    @IBOutlet weak var C: UIButton!
+    @IBOutlet weak var cSharp: UIButton!
+    @IBOutlet weak var D: UIButton!
+    @IBOutlet weak var dSharp: UIButton!
+    @IBOutlet weak var E: UIButton!
+    @IBOutlet weak var F: UIButton!
+    @IBOutlet weak var fSharp: UIButton!
+    @IBOutlet weak var G: UIButton!
+    @IBOutlet weak var gSharp: UIButton!
+    @IBOutlet weak var A: UIButton!
+    @IBOutlet weak var aSharp: UIButton!
+    @IBOutlet weak var B: UIButton!
+    
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         
+        C.backgroundColor = UIColor.black
+        cSharp.backgroundColor = UIColor.black
+        D.backgroundColor = UIColor.black
+        dSharp.backgroundColor = UIColor.black
+        E.backgroundColor = UIColor.black
+        F.backgroundColor = UIColor.black
+        fSharp.backgroundColor = UIColor.black
+        G.backgroundColor = UIColor.black
+        gSharp.backgroundColor = UIColor.black
+        A.backgroundColor = UIColor.black
+        aSharp.backgroundColor = UIColor.black
+        B.backgroundColor = UIColor.black
         
+        print(flag)
         if (flag == true){
             fading()
         }
